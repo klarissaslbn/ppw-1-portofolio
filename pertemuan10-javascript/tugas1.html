@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Penulisan JavaScript</title>
+
+<!-- ===================== -->
+<!-- EXTERNAL JAVASCRIPT   -->
+<!-- ===================== -->
+<script src="script.js"></script>
+
+</head>
+<body>
+
+<h2>Penulisan JavaScript & Output</h2>
+
+<!-- ===================== -->
+<!-- INLINE JAVASCRIPT     -->
+<!-- ===================== -->
+<!-- alert digunakan untuk output popup -->
+<button onclick="alert('Ini output dari INLINE JavaScript!')">
+Klik Inline JS
+</button>
+
+<hr>
+
+<div id="hasil"></div>
+
+<!-- ===================== -->
+<!-- EMBED JAVASCRIPT      -->
+<!-- ===================== -->
+<script>
+
+/*
+EMBED JavaScript
+Menggunakan:
+- console.log
+- document.write
+- innerHTML
+*/
+
+// console.log
+console.log("Ini output dari EMBED JavaScript");
+
+// document.write
+document.write("<p>Output document.write dari EMBED JS</p>");
+
+// innerHTML
+document.getElementById("hasil").innerHTML =
+"<b>Output innerHTML dari EMBED JS</b>";
+
+</script>
+
+</body>
+</html>
