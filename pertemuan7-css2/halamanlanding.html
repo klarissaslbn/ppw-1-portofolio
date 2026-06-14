@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 15px 30px;
+  background: #b94c69;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero img {
+  width: 300px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; 
+  padding: 30px;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  padding: 20px;
+  background: #eee;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  padding: 30px;
+  background: #333;
+  color: white;
+}
+
+ .main {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="main">
+<div class="navbar">
+  <div class="logo">MyLogo</div>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>Selamat Datang</h1>
+    <p>Landing page</p>
+  </div>
+  <img src="https://i.pravatar.cc/300" alt="">
+</div>
+
+<div class="cards">
+  <div class="card">Kartu 1</div>
+  <div class="card">Kartu 2</div>
+  <div class="card">Kartu 3</div>
+</div>
+
+</div>
+
+<div class="footer">
+  <div>Kolom 1</div>
+  <div>Kolom 2</div>
+  <div>Kolom 3</div>
+</div>
+
+</body>
+</html>

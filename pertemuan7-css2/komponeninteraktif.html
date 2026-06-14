@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Komponen Interaktif</title>
+
+<style>
+    :root {
+    --primary: #6c63ff;
+    --secondary: #ff6584;
+    --dark: #333;
+    --light: #f4f4f4;
+    }
+
+    body {
+    font-family: sans-serif;
+    background: var(--light);
+    text-align: center;
+    padding: 40px;
+    }
+
+    .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+
+    .btn1 {
+    background: var(--primary);
+    }
+    .btn1:hover {
+    background: var(--secondary);
+    }
+
+
+    .btn2 {
+    background: var(--secondary);
+    }
+    .btn2:hover {
+    transform: scale(1.2);
+    }
+
+
+    .btn3 {
+    background: var(--dark);
+    }
+    .btn3:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid var(--primary);
+    border-radius: 50%;
+    margin: 30px auto;
+    animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+    }
+
+    .fade-in {
+    opacity: 0;
+    animation: fade 2s forwards;
+    }
+
+    @keyframes fade {
+    to { opacity: 1; }
+    }
+
+
+    .card {
+    width: 200px;
+    height: 120px;
+    background: var(--primary);
+    color: white;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.6s;
+    }
+
+    .card:hover {
+    transform: rotateY(180deg);
+    }
+</style>
+</head>
+
+<body>
+
+
+<h1 class="fade-in">Selamat Datang</h1>
+
+
+<button class="btn btn1">Ini Hover Warna</button>
+<button class="btn btn2">Ini Hover Zoom</button>
+<button class="btn btn3">Ini Hover Shadow</button>
+
+<div class="spinner"></div>
+
+<div class="card">Hover Putar</div>
+
+</body>
+</html>

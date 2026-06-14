@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: sans-serif; }
+  .container {
+    position: relative;
+    width: 280px;
+    height: 350px;
+    background: #e0e0e0;
+    border: 2px solid #999;
+    margin: 20px;
+  }
+  .box {
+    width: 100px; height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    position: absolute;
+  }
+  .a {
+    background: #6c63ff;
+    top: 10px; left: 10px;
+    z-index: 2;
+  }
+  .b {
+    background: #ff6584;
+    top: 40px; left: 50px;
+    z-index: 1;
+  }
+  .c {
+    background: #43e97b;
+    top: 70px; left: 100px;
+    z-index: 3; /* paling atas */
+  }
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box a">z-index: 2</div>
+    <div class="box b">z-index: 1</div>
+    <div class="box c">z-index: 3</div>
+  </div>
+ 
+</body>
+</html>
